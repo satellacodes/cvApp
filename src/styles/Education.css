@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+.education {
+  background: linear-gradient(135deg, #55efc4, #00b894);
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 184, 148, 0.4);
+  border: 5px solid #fdcb6e;
+  animation: slideInFromRight 0.6s ease-out;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.education h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+  text-shadow: 2px 2px 0 #00a085;
+}
+
+.add-btn {
+  background: linear-gradient(45deg, #fdcb6e, #e17055);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.education-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  border: 3px dashed #00b894;
+}
+
+.date-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.save-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.save-btn {
+  background: linear-gradient(45deg, #00b894, #00a085);
+  color: white;
+}
+
+.cancel-btn {
+  background: linear-gradient(45deg, #e17055, #d63031);
+  color: white;
+}
+
+.save-btn:hover,
+.cancel-btn:hover {
+  transform: scale(1.05);
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.education-item {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #fdcb6e;
+  transition: all 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.education-content h3 {
+  color: #2d3436;
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+
+.education-content p {
+  color: #636e72;
+  margin-bottom: 5px;
+}
+
+.education-content span {
+  color: #00b894;
+  font-weight: bold;
+}
+
+.education-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background: #74b9ff;
+  color: white;
+}
+
+.delete-btn {
+  background: #ff7675;
+  color: white;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: scale(1.1);
+}

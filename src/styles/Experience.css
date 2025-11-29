@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+.experience {
+  background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(253, 203, 110, 0.4);
+  border: 5px solid #e17055;
+  animation: slideInFromBottom 0.6s ease-out;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.experience h2 {
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+  text-shadow: 2px 2px 0 #e17055;
+}
+
+.experience-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  border: 3px dashed #e17055;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 3px solid #e17055;
+  border-radius: 10px;
+  font-size: 1.1em;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  font-family: "Comic Sans MS", cursive;
+  resize: vertical;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: #d63031;
+  background: white;
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(231, 112, 85, 0.4);
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.experience-item {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 2px solid #e17055;
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateX(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.experience-content {
+  flex: 1;
+}
+
+.experience-content h3 {
+  color: #2d3436;
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+
+.position {
+  color: #e17055;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.responsibilities {
+  color: #636e72;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.experience-content span {
+  color: #e17055;
+  font-weight: bold;
+}
+
+.experience-actions {
+  display: flex;
+  gap: 10px;
+}
